@@ -37,14 +37,14 @@ function ProductDescription({ handleAddCart }) {
       <div className='cart__button__container'>
         <div className='price__container'>
           <img
-            src='../../public/icon-minus.svg'
+            src='/icon-minus.svg'
             alt='Resta'
             className='svg__resta'
             onClick={() => handleResta()}
           />
           <p className='count'>{quantity}</p>
           <img
-            src='../../public/icon-plus.svg'
+            src='/icon-plus.svg'
             alt='Suma'
             className='svg__suma'
             onClick={() => handleSuma()}

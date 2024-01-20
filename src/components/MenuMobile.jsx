@@ -5,7 +5,7 @@ function MenuMobile({ handleCloseMenu }) {
     <div className='menu__mobile__container'>
       <div className='menu__mobile'>
         <img
-          src='../../public/icon-close.svg'
+          src='/icon-close.svg'
           alt='Close'
           className='close__button'
           onClick={() => handleCloseMenu()}

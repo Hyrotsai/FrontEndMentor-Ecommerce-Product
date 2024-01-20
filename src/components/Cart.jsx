@@ -9,7 +9,7 @@ function Cart({ quantity }) {
           <div className='description__container'>
             <div className='product__description__container'>
               <img
-                src='../../public/image-product-1-thumbnail.jpg'
+                src='/image-product-1-thumbnail.jpg'
                 alt='Carrito'
                 className='img__product__cart'
               />
@@ -18,7 +18,7 @@ function Cart({ quantity }) {
                 <strong className='price__total'>${125 * quantity}.00</strong>
               </p>
               <img
-                src='../../public/icon-delete.svg'
+                src='/icon-delete.svg'
                 alt='Delete'
                 className='delete__cart'
               />

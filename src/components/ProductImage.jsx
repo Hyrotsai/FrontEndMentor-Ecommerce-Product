@@ -27,25 +27,25 @@ function ProductImage() {
   return (
     <div className='img__container'>
       <img
-        src={`../../public/image-product-${numberImg}.jpg`}
+        src={`/image-product-${numberImg}.jpg`}
         alt='Principal'
         className='img__principal'
       />
       <img
-        src='../../public/icon-previous.svg'
+        src='/icon-previous.svg'
         alt='Izquierda'
         className='svg__izq only__mobile'
         onClick={() => handlePrev()}
       />
       <img
-        src='../../public/icon-next.svg'
+        src='/icon-next.svg'
         alt='Derecha'
         className='svg__der only__mobile'
         onClick={() => handleNext()}
       />
       <div className='img__preview__container only__desktop'>
         <img
-          src='../../public/image-product-1-thumbnail.jpg'
+          src='/image-product-1-thumbnail.jpg'
           alt='Primario'
           className={`img__preview ${
             numberImg == 1 ? 'img__preview__active' : null
@@ -56,7 +56,7 @@ function ProductImage() {
           }}
         />
         <img
-          src='../../public/image-product-2-thumbnail.jpg'
+          src='/image-product-2-thumbnail.jpg'
           alt='Secundario'
           className={`img__preview ${
             numberImg == 2 ? 'img__preview__active' : null
@@ -67,7 +67,7 @@ function ProductImage() {
           }}
         />
         <img
-          src='../../public/image-product-3-thumbnail.jpg'
+          src='/image-product-3-thumbnail.jpg'
           alt='Terceario'
           className={`img__preview ${
             numberImg == 3 ? 'img__preview__active' : null
@@ -78,7 +78,7 @@ function ProductImage() {
           }}
         />
         <img
-          src='../../public/image-product-4-thumbnail.jpg'
+          src='/image-product-4-thumbnail.jpg'
           alt='Cuarto'
           className={`img__preview ${
             numberImg == 4 ? 'img__preview__active' : null

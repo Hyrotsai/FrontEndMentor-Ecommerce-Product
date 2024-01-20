@@ -1,0 +1,152 @@
+.text__container {
+  width: 50%;
+  padding: 3rem;
+}
+
+.sub__tittle {
+  color: var(--Orange);
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tittle {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.parrafo {
+  color: var(--GrayishBlue);
+  margin: 1rem 0;
+}
+
+.main__price {
+  color: var(--Black);
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.discount__percentage {
+  background-color: var(--PaleOrange);
+  color: var(--Orange);
+  font-weight: bold;
+  display: inline;
+  padding: 3px 5px;
+}
+
+.discount__price {
+  color: var(--GrayishBlue);
+  text-decoration: line-through;
+  font-weight: bolder;
+  margin: 1rem auto;
+}
+
+.cart__button__container {
+  display: flex;
+  height: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.price__container {
+  background-color: var(--LightGrayisBlue);
+  display: flex;
+  margin: 0 0.5rem;
+  width: 30%;
+  border-radius: 0.5rem;
+}
+
+.count {
+  margin: auto 0.5rem;
+  font-weight: bold;
+}
+
+.svg__resta {
+  height: 5px;
+  width: 15px;
+  margin: auto auto auto 1rem;
+  cursor: pointer;
+}
+
+.svg__resta:hover {
+  opacity: 0.5;
+}
+
+.svg__suma {
+  height: 15px;
+  width: 15px;
+  margin: auto 1rem auto auto;
+  cursor: pointer;
+}
+
+.svg__suma:hover {
+  opacity: 0.5;
+}
+
+.button__cart {
+  margin: 0 1rem;
+  width: 50%;
+  background-color: var(--Orange);
+  color: var(--White);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button__cart:hover {
+  opacity: 0.5;
+}
+
+.button__items__containers {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.svg__button {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(212deg) brightness(113%) contrast(100%);
+}
+
+@media (width < 500px) {
+  .text__container {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .tittle {
+    font-size: 2rem;
+  }
+
+  .discount__price {
+    display: inline;
+    position: relative;
+    left: 35vw;
+  }
+
+  .cart__button__container {
+    flex-direction: column;
+    height: 130px;
+    gap: 1rem;
+  }
+
+  .price__container {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .button__cart {
+    margin: auto;
+    width: 100%;
+  }
+
+  .button__items__containers {
+    height: 60px;
+  }
+}

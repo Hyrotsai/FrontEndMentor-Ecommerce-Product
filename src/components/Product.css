@@ -1,0 +1,12 @@
+.product__container {
+  height: 100%;
+  margin: 4rem 3rem 0 3rem;
+  display: flex;
+}
+
+@media (width < 500px) {
+  .product__container {
+    margin: auto;
+    flex-direction: column;
+  }
+}

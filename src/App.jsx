@@ -10,10 +10,14 @@ function App() {
     setQuantity(item);
   };
 
+  const emptyCart = () => {
+    setQuantity(0);
+  };
+
   return (
     <>
       <section className='menu__section'>
-        <Menu quantity={quantity} />
+        <Menu quantity={quantity} emptyCart={emptyCart} />
       </section>
       <section className='content__section'>
         <Product handleAddCart={handleAddCart} />

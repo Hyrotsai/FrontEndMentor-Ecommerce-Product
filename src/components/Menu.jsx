@@ -3,7 +3,7 @@ import Cart from './Cart';
 import './Menu.css';
 import MenuMobile from './MenuMobile';
 
-function Menu({ quantity }) {
+function Menu({ quantity, emptyCart }) {
   const [showCart, setShowCart] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -37,7 +37,7 @@ function Menu({ quantity }) {
         {quantity > 0 ? <p className='number__cart'>{quantity}</p> : null}
         <img src='/image-avatar.png' alt='Avatar' className='img__avatar' />
       </div>
-      {showCart && <Cart quantity={quantity} />}
+      {showCart && <Cart quantity={quantity} emptyCart={emptyCart} />}
       {showMenu && <MenuMobile handleCloseMenu={handleCloseMenu} />}
     </div>
   );

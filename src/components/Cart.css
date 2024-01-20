@@ -46,6 +46,7 @@
 .delete__cart {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .button__cart__checkout {
